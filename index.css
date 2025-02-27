@@ -1,9 +1,9 @@
-html{
+body{
     background: black;
-    /* background-image: url('bg.jpg'); */
+    background-image: url('bg.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     color: white;
     margin: 0px;
 }
@@ -175,6 +175,11 @@ html{
     align-items: center;
 }
 @media  screen and (max-width:800px) {
+    body{
+        background-position: right;
+        
+
+    }
     .left-nav ul{
         display: none;
     }

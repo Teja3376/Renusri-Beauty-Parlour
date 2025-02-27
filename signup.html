@@ -22,7 +22,6 @@
         </div>
         <div class="right-nav">
             <ul>
-                <li><a class="a" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></i></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </div>
@@ -88,44 +87,6 @@
         </div>
         
     </div>
-    <script>
-        const signup = document.getElementById("signup")
-        // signup.addEventListener("click", function () {
-        //     localStorage.removeItem("signupData");
-        // })
-        let data = localStorage.getItem("signup")
-        // if(data){
-        //     var alertMessage ="This details are already in";
-        //     alert(alertMessage);
-        // }
-        // else{
-            let username = document.getElementById("username");      
-            let email = document.getElementById("email");
-            let password = document.getElementById("password");
-            // let signup = document.getElementById("signup");
-            let id = document.getElementById("left");
-            signup.addEventListener("click",function (event){
-                event.preventDefault();
-                let userName = username.value;
-                let emailId = email.value;
-                let passWord = password.value;
-
-                let signUp = {
-                    username : userName,
-                    email : emailId,
-                    password : passWord
-                }
-
-                if(data){
-                    var alertMessage ="This details are already in";
-                    alert(alertMessage);
-                }else{
-                    localStorage.setItem("signup", JSON.stringify(signUp))
-
-                }
-
-            })
-        // }
-    </script>
+   
 </body>
 </html>
